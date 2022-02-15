@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="box">
+    <div id='res'><input type="text" readonly id="result"/></div>
+    <div id='res2'>
+    <input type="button" class='orange span-2' value="C" onclick='c("")'>
+    <input type="button" class="orange span-2" name="div" value="/" onclick='calc("/")'>
+    <input type="button" name="one" value="1" onclick='calc("1")'>
+    <input type="button" name="two" value="2" onclick='calc("2")'>
+    <input type="button" name="three" value="3" onclick='calc("3")'>
+    <input type="button" class="operator orange" name="plus" value="+" onclick='calc("+")'>
+    <input type="button" name="four" value="4" onclick='calc("4")'>
+
+    <input type="button" name="five" value="5" onclick='calc("5")'>
+
+    <input type="button" name="six" value="6" onclick='calc("6")'>
+
+    <input type="button" class="orange" name="minus" value="-" onclick='calc("-")'>
+
+    <input type="button" name="seven" value="7" onclick='calc("7")'>
+
+    <input type="button" name="eight" value="8" onclick='calc("8")'>
+
+    <input type="button" name="nine" value="9" onclick='calc("9")'>
+
+    <input type="button" class="orange" name="times" value="*" onclick='calc("*")'>
+    <input type="button" class='orange span-2' name="zero" value="0" onclick='calc("0")'>
+    <input type="button" class='orange span-2' value=" = " onclick='calculate()'>
+    </div>      
+</div>
+    <br>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
