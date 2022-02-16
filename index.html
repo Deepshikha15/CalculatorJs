@@ -9,12 +9,12 @@
 </head>
 <body>
 <div id="box">
-    <div id='res'><input type="text" readonly id="result"/></div>
+    <div id='box'><input type="text" readonly id="result"/></div>
     <div id='res2'>
     <input type="button" class='orange span-2' value="C" onclick='c("")'>
     <input type="button" class="orange span-2" name="div" value="/" onclick='calc("/")'>
-    <input type="button" name="one" value="1" onclick='calc("1")'>
-    <input type="button" name="two" value="2" onclick='calc("2")'>
+    <input type="button" id="one" value="1" onclick='calc("1")'>
+    <input type="button" id="one" value="2" onclick='calc("2")'>
     <input type="button" name="three" value="3" onclick='calc("3")'>
     <input type="button" class="operator orange" name="plus" value="+" onclick='calc("+")'>
     <input type="button" name="four" value="4" onclick='calc("4")'>
@@ -36,6 +36,47 @@
     <input type="button" class='orange span-2' value=" = " onclick='calculate()'>
     </div>      
 </div>
+<table style='border: 1px solid black;'>
+    <colgroup>
+        <col span='3' style='border: 1px solid black;background-color: white;'>
+        <col style='border: 1px solid black;background-color: orange;'>
+    </colgroup>  
+    <tbody id="abc">
+        <tr>
+            <td style='border: 1px solid black; background-color: orange;' colspan="2">C</td>
+            <td style='border: 1px solid black; background-color: orange;' colspan="2">/</td>
+        </tr>
+        <tr id="a">
+
+           
+        </tr>
+        <tr>
+            <td style='border: 1px solid black; background-color: orange'>+</td>
+            <td style='border: 1px solid black; background-color: orange;'>-</td>
+            <td style='border: 1px solid black; background-color: orange;'>*</td>
+        </tr>
+        <!-- <tr>
+            <td>1</td>
+            <td >2</td>
+            <td >3</td>
+        </tr>
+        
+        <tr>
+            <td >4</td>
+            <td >5</td>
+            <td >6</td>
+        </tr>
+        <tr>
+            <td >7</td>
+            <td >8</td>
+            <td >9</td>
+        </tr> -->
+        <tr>
+            <td style='border: 1px solid black;background-color: orange;' colspan="2">0</td>
+            <td style='border: 1px solid black;background-color: orange;' colspan="2" onclick='clicked()'>=</td>
+        </tr>
+</tbody>
+</table>
     <br>
     <script type="text/javascript" src="index.js"></script>
 </body>
